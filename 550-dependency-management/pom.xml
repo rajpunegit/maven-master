@@ -1,0 +1,68 @@
+<project
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+  <!--
+  <parent>
+    <groupId>com.soebes.smpp</groupId>
+    <artifactId>smpp</artifactId>
+    <version>0.6.5</version>
+  </parent>
+  -->
+  
+  <groupId>com.soebes.maven.training.module</groupId>
+  <artifactId>dependency-management</artifactId>
+  <version>0.1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>550 :: Dependency Management</name>
+
+  <url>http://www.soebes.de</url>
+  <inceptionYear>2011</inceptionYear>
+  <organization>
+    <name>SoftwareEntwicklung Beratung Schulung</name>
+    <url>http://www.soebes.de</url>
+  </organization>
+
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <scm>
+    <connection>scm:git:http://utility</connection>
+    <developerConnection>scm:git:http://ut</developerConnection>
+    <url>xxxx</url>
+  </scm>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.testng</groupId>
+        <artifactId>testng</artifactId>
+        <version>6.8.8</version>
+      </dependency>
+      <dependency>
+        <groupId>com.beust</groupId>
+        <artifactId>jcommander</artifactId>
+        <version>1.32</version>
+      </dependency>
+    </dependencies>
+
+ </dependencyManagement>
+
+  <dependencies>
+    <dependency>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+      <version>1.2.16</version>
+    </dependency>
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+        <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>
